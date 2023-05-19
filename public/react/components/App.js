@@ -11,6 +11,7 @@ export const App = () => {
 	async function fetchPages(){
 		try {
 			const response = await fetch(`${apiURL}/wiki`);
+			//this is where the array is coming from
 			const pagesData = await response.json();
 			setPages(pagesData);
 		} catch (err) {
